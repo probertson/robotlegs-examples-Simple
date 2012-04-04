@@ -2,10 +2,14 @@
 <s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009" 
 					   xmlns:s="library://ns.adobe.com/flex/spark" 
 					   xmlns:mx="library://ns.adobe.com/flex/mx"
+					   xmlns:rl2="robotlegs.bender.mxml.*"
+					   xmlns:mvcs="robotlegs.bender.bundles.mvcs.*"
 					   xmlns:simple="simple.*"
 					   xmlns:view="simple.view.*">
 	<fx:Declarations>
-		<simple:SimpleContext contextView="{this}"/>
+		<rl2:ContextBuilderTag>
+			<mvcs:MVCSBundle/>
+		</rl2:ContextBuilderTag>
 	</fx:Declarations>
 	<view:ButtonContainer x="30" y="50"/>
 	<view:TextContainer x="30" y="90"/>
