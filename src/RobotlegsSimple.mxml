@@ -4,13 +4,11 @@
 					   xmlns:mx="library://ns.adobe.com/flex/mx"
 					   xmlns:rl2="robotlegs.bender.mxml.*"
 					   xmlns:mvcs="robotlegs.bender.bundles.mvcs.*"
-					   xmlns:migration="robotlegs.bender.extensions.migration.*"
 					   xmlns:simple="simple.*"
 					   xmlns:view="simple.view.*">
 	<fx:Declarations>
 		<rl2:ContextBuilderTag>
 			<mvcs:MVCSBundle/>
-			<migration:MigrationExtension/>
 			<simple:SimpleConfig/>
 		</rl2:ContextBuilderTag>
 	</fx:Declarations>
